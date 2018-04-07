@@ -14,7 +14,7 @@ class Search extends React.Component{
     static navigationOptions = {
         title:"Search City",
         tabBarIcon: () => {
-            return <Image source={require('./icons/twit.png')} style={{width:20, height:20}} />
+            return <Image source={require('./icons/search.png')} style={{width:20, height:20}} />
         }
     }
 
@@ -38,7 +38,7 @@ class Search extends React.Component{
                     onChangeText={(text) => this.setState({city: text})}
                     value={this.state.city}
                 />
-                <Button color={style.red} onPress={() => this.submit()} title="Submit" />
+                <Button color={style.black} onPress={() => this.submit()} title="Submit" />
             </View>
         )
     }

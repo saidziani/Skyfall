@@ -6,7 +6,7 @@ export default class About extends React.Component{
 
     static navigationOptions = {
         tabBarIcon: () => {
-            return <Image source={require('./icons/yout.png')} style={{width:20, height:20}} />
+            return <Image source={require('./icons/home.png')} style={{width:20, height:20}} />
         }
     }
 

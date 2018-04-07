@@ -13,7 +13,7 @@ export default class List extends React.Component{
         return {
             title: `Weather / ${navigation.state.params.city}`,
             tabBarIcon: () => {
-                return <Image source={require('./icons/twit.png')} style={{width:20, height:20}} />
+                return <Image source={require('./icons/search.png')} style={{width:20, height:20}} />
             }
         }
 

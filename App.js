@@ -2,6 +2,8 @@ import React from 'react'
 import {View, StyleSheet, StatusBar} from 'react-native'
 import About from './components/About'
 import Search from './components/Search'
+import Signup from './components/Signup'
+
 import style from './Style'
 import {TabNavigator} from 'react-navigation'
 
