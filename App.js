@@ -1,53 +1,43 @@
 import React from 'react'
 import {View, StyleSheet, StatusBar} from 'react-native'
+
+import Signup from './components/Signup'
+import Signin from './components/Signin'
 import About from './components/About'
 import Search from './components/Search'
-import Signup from './components/Signup'
+import List from './components/List'
 import Home from './components/Home'
-
-
 import style from './Style'
-import {TabNavigator} from 'react-navigation'
+
+
+import {TabNavigator, StackNavigator} from 'react-navigation'
 
 import { YellowBox } from 'react-native';
-
 YellowBox.ignoreWarnings([
     'Warning: componentWillMount is deprecated',
     'Warning: componentWillReceiveProps is deprecated',
 ]);
 
-const Tabs = TabNavigator(
+
+const RootStack = StackNavigator(
     {
-        Search: {screen: Search},
-        About: {screen: About}
+        Home: { screen: Home,},
+        Signup: { screen: Signup,},
+        Signin: {screen: Signin,},
+        About: { screen: About,},
+        Search: { screen: Search,},
+        List: {screen: List,},
     },
     {
-        tabBarPosition: 'bottom',
-        tabBarOptions: {
-            showIcon: true,
-            showLabel: false,
-            indicatorStyle: {
-                height: 3,
-                backgroundColor: '#000'
-            },
-            style:{
-                backgroundColor: style.black,
-                borderTopWidth: 2,
-                borderColor: '#000'
-            }
-        }
+        initialRouteName: 'Home',
     }
-)
+);
+
 
 export default class App extends React.Component {
-
-
   render() {
     return (
-        <View style={{flex: 1}}>
-            <StatusBar hidden={true}/>
-            <Home />
-        </View>
-    );
+      <RootStack />
+    )
   }
 }

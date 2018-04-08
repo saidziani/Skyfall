@@ -1,11 +1,9 @@
 import React from 'react'
-import {Text, Image, View, Button, AppRegistry, ActivityIndicator} from 'react-native'
+import {Image, View, ActivityIndicator} from 'react-native'
 import style from '../Style'
-import Signup from './Signup'
-import {StackNavigator} from 'react-navigation'
 
 
-class Home extends React.Component{
+export default class Home extends React.Component{
     
     static navigationOptions = {
         header: null
@@ -18,7 +16,7 @@ class Home extends React.Component{
     }
 
     move (){
-        this.props.navigation.navigate('Signup')
+        this.props.navigation.navigate('Signin')
     }
 
     render(){
@@ -30,11 +28,6 @@ class Home extends React.Component{
         )
     }
 }
-
-export default StackNavigator({
-  Home: { screen: Home},
-  Signup: { screen: Signup }
-});
 
 
 

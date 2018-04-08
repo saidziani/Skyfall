@@ -3,19 +3,14 @@ import {TextInput, Image, Button, View} from 'react-native'
 
 import style from '../Style'
 
-import {StackNavigator} from 'react-navigation'
 
-import List from './List'
-
-import PropTypes from 'prop-types'
-
-class Search extends React.Component{
+export default class Search extends React.Component{
 
     static navigationOptions = {
         title:"Search City",
-        tabBarIcon: () => {
-            return <Image source={require('./icons/search.png')} style={{width:20, height:20}} />
-        }
+        //tabBarIcon: () => {
+        //    return <Image source={require('./icons/search.png')} style={{width:20, height:20}} />
+        //}
     }
 
     constructor (props){
@@ -25,9 +20,8 @@ class Search extends React.Component{
         }
     }
 
-
     submit(){
-        this.props.navigation.navigate('Result', {city: this.state.city})
+        this.props.navigation.navigate('List', {city: this.state.city})
     }
 
     render() {
@@ -48,9 +42,3 @@ const navigationOptions = {
     headerStyle: style.header,
     headerTitleStyle: style.headerTitle
 }
-
-
-export default StackNavigator({
-    Search:{ screen: Search, navigationOptions },
-    Result:{ screen: List, navigationOptions}
-})

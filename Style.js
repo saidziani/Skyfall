@@ -7,6 +7,8 @@ export default {
     gray: gray,
     container:{
         margin: 20,
+        flex: 1,
+        justifyContent: 'center',
     },
     title:{
         fontSize: 25,
