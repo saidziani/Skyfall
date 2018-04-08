@@ -1,5 +1,7 @@
 {
   "expo": {
+    "name": "Skyfall",
+    "description": "My first React-Native app",
     "sdkVersion": "26.0.0"
   }
 }

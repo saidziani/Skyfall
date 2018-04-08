@@ -16,7 +16,6 @@ export default class List extends React.Component{
                 return <Image source={require('./icons/search.png')} style={{width:20, height:20}} />
             }
         }
-
     }
 
     constructor (props){

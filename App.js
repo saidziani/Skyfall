@@ -3,6 +3,8 @@ import {View, StyleSheet, StatusBar} from 'react-native'
 import About from './components/About'
 import Search from './components/Search'
 import Signup from './components/Signup'
+import Home from './components/Home'
+
 
 import style from './Style'
 import {TabNavigator} from 'react-navigation'
@@ -44,7 +46,7 @@ export default class App extends React.Component {
     return (
         <View style={{flex: 1}}>
             <StatusBar hidden={true}/>
-            <Tabs />
+            <Home />
         </View>
     );
   }

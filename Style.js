@@ -13,14 +13,20 @@ export default {
         marginBottom:30
     },
     input:{
-        height: 40,
+        height: 30,
         borderColor: white,
-        borderWidth: 1,
+        borderWidth: .5,
         paddingHorizontal: 15,
-        marginBottom:20
+        marginBottom:50,
+        fontSize: 16,
+        borderBottomColor: gray
+    },
+    logo:{
+        maxWidth: 250,
+        maxHeight: 120
     },
     text:{
-        fontSize:15,
+        fontSize:18,
     },
     header:{
         backgroundColor: black,
