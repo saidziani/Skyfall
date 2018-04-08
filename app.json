@@ -1,6 +1,8 @@
 {
   "expo": {
     "name": "Skyfall",
+    "icon": "./icon.png",
+    "version": "1.0.0",
     "description": "My first React-Native app",
     "sdkVersion": "26.0.0"
   }
