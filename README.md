@@ -16,10 +16,10 @@
     ```
 
 ### Screenshots from the application
-<img src="https://github.com/saidziani/Skyfall/tree/master/screenshots/landing.png" width="200"/> 
-<img src="https://github.com/saidziani/Skyfall/tree/master/screenshots/signin.png" width="200"/> 
-<img src="https://github.com/saidziani/Skyfall/tree/master/screenshots/signup.png" width="200"/> 
-<img src="https://github.com/saidziani/Skyfall/tree/master/screenshots/weather.png" width="200"/> 
+<img src="https://github.com/saidziani/Skyfall/blob/master/screenshots/landing.png" width="200"/> 
+<img src="https://github.com/saidziani/Skyfall/blob/master/screenshots/signin.png" width="200"/> 
+<img src="https://github.com/saidziani/Skyfall/blob/master/screenshots/signup.png" width="200"/> 
+<img src="https://github.com/saidziani/Skyfall/blob/master/screenshots/weather.png" width="200"/> 
 
 
 ### Table of contents
