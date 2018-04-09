@@ -20,3 +20,5 @@ yarn.lock
 .babelrc
 .flowconfig
 .watchmanconfig
+App.test.js
+my-app-key.keystore
