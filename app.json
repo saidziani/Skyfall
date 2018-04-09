@@ -1,9 +1,11 @@
 {
   "expo": {
     "name": "Skyfall",
-    "icon": "./icon.ico",
     "version": "1.0.0",
     "description": "My first React-Native app",
-    "sdkVersion": "26.0.0"
+    "sdkVersion": "26.0.0",
+    "android": {
+      "package": "said.twss.digital",
+    },
   }
 }
